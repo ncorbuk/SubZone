@@ -1,7 +1,7 @@
 ![alt text](https://github.com/ncorbuk/SubZone/blob/master/logo.png)
 
 # SubZone
-```Subdomain,Dns records, & More!.```
+```HTTP(S)-Subdomain,Dns records, & More!.```
 
 This program SubZone will find all subdomains for a domain/host you specify, and Dns records of all the 
 Dns server's for that domain/host, including in the records can be found owner/sys-admin email,telephone,location,
