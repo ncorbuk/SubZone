@@ -52,7 +52,7 @@ print('')
 def args_parser():
 	#parse required argument/s needed for program
 	parser = argparse.ArgumentParser()
-	parser.add_argument('-d', '--domain', type=str, required=False, help='domain - to find subdomains(ex use. http(s)://facebook.com)')
+	parser.add_argument('-d', '--domain', type=str, required=True, help='domain - to find subdomains(ex use. http(s)://facebook.com)')
 	parser.add_argument('-o', '--output', type=str, required=False, help='filename - file for output data(ex use. facebook.txt)')
 	args = parser.parse_args()
 	return args
