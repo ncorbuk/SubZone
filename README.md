@@ -1,3 +1,5 @@
+![alt text](https://github.com/ncorbuk/SubZone/blob/master/logo.png)
+
 # SubZone
 ```Subdomain,Dns records, & More!.```
 
