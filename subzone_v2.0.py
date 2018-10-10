@@ -45,7 +45,7 @@ print(Fore.GREEN+'''
 ██████║      ██║ ╚═╝ ██║╚██████╔╝██║  ██║███████╗██╗                                      
 ╚═════╝      ╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  
 ''')
-print(Back.RED+Fore.GREEN+'Copyright: Nathan.Corbin © 2018.')
+print(Back.RED+Fore.GREEN+'Coded by: Nathan.Corbin 2018.')
 print('')
 
 
