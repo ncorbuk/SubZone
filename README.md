@@ -61,6 +61,7 @@ Versioning will be in terms off v1/v2.2/v3 etc. Highest number in version/file i
 ## Acknowledgments
 
 * I took inspiration from [UnaPibaGeek](https://github.com/UnaPibaGeek) and her ctfr code.(check her out, great stuff)
+* I took inspiration from [DigiNinja - DigiNinja](https://zonetransfer.me) for setting up zonetransfer.me wich is purposely vulnerable and not setup correctly to show how a Dns server can betray you if you dont know what your doing.
 
 ## License
 
