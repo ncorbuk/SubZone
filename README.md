@@ -1,5 +1,5 @@
 # SubZone
-'''Subdomain,Dns records, & More!.'''
+```Subdomain,Dns records, & More!.```
 
 This program SubZone will find all subdomains for a domain/host you specify, and Dns records of all the 
 Dns server's for that domain/host, including in the records can be found owner/sys-admin email,telephone,location,
@@ -13,11 +13,12 @@ To get started simply Fork the repository, open up console(cmd/powershell/termin
 the SubZone v*.py (* is for latest Version, eg.1.0/2.0 etc). Then once that is done type "python SubZone.py -h"
 that will give you the options/arguments you need to specify to run file. Arguments are as follows - example of commands...
 
-'''
-- python SubZone.py -d (domain) -o (output)
-- python SubZone.py -d https://facebook.com -o facebook.txt
-- python subZone.py -d https://zonetransfer.me -o zone.txt
-'''
+**Example Usage:**
+```
+- python subzone_v2.0.py -d (domain) -o (output)
+- python subzone_v2.0.py -d https://facebook.com -o facebook.txt
+- python subzone_v2.0.py -d https://zonetransfer.me -o zone.txt
+```
 
 Above is the command layout, and some examples. If you wish to see how good! my program is.. I highly reccomend trying the above
 TWO arguments with SubZone to see what Subdomains/Dns records you will receive for facebook.com(very many subsdomains) and
@@ -37,7 +38,9 @@ and install as necessary. At this momment in time you will need to make sure you
 
 ## Deployment
 
-Just double tap and go ;)
+Just double tap and go ;) joke.
+Just use console and use commands in the **Getting Started** section at the top, or you can quickly use 
+python subzone v2.0.py -h (which will give you the options that you need to specify)
 
 ## Built With
 
@@ -53,7 +56,7 @@ Versioning will be in terms off v1/v2.2/v3 etc. Highest number in version/file i
 
 ## Authors
 
-* **Nathan Corbin** * - *All the work* - [ncorbuk](https://github.com/ncorbuk)
+* **Nathan Corbin** - *All the work* - [ncorbuk](https://github.com/ncorbuk)
 
 ## Acknowledgments
 
