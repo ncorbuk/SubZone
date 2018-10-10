@@ -45,6 +45,24 @@ Just double tap and go ;) joke.
 Just use console and use commands in the **Getting Started** section at the top, or you can quickly use 
 python subzone v2.0.py -h (which will give you the options that you need to specify)
 
+## Usage examples with pictures
+
+### Facebook (https://facebook.com)
+![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/facebook_1.png)
+
+![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/facebook_2.png)
+
+### Zonetransfer (https://zonetransfer.me)
+![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/zonetransfer_1.png)
+
+![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/zonetransfer_2.png)
+
+![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/zonetransfer_3.png)
+
+### Output documents (-o filename.txt)
+
+![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/output_docs.png)
+
 ## Built With
 
 * [Python]('https://www.python.org/) - Python Software Foundation
