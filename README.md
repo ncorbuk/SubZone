@@ -5,7 +5,7 @@ This program SubZone will find all subdomains for a domain/host you specify, and
 Dns server's for that domain/host, including in the records can be found owner/sys-admin email,telephone,location,
 servers,description of any sofwtare using tcp/udp like sic_tcp.(example) wich would mean they domain has a VoIp
 with port info and such. The possibiltes are endless depending on how well the domain/host has configured there 
-Dns server.
+Dns server and what information they are leaking.
 
 ## Getting Started
 
@@ -15,6 +15,7 @@ that will give you the options/arguments you need to specify to run file. Argume
 
 **Example Usage:**
 ```
+-d (domain) is True(needed)  -o (output) is False(optional)
 - python subzone_v2.0.py -d (domain) -o (output)
 - python subzone_v2.0.py -d https://facebook.com -o facebook.txt
 - python subzone_v2.0.py -d https://zonetransfer.me -o zone.txt
