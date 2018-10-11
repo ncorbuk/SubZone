@@ -2,16 +2,27 @@
 
 # SubZone
 ```HTTP(S)-Subdomains,Dns records, & More!.```
-* All subdomains (all registered subdomains from primary domain/host)
-* All active subdomains (domains that are online and alive!)
-* Dns records (all records that have leaked and are recoverable)
-* & More! (+ lots more to come)
+* All subdomains  ~ (all registered subdomains from primary domain/host)
+* All **active** subdomains  ~ (domains that are online and alive!)
+* Dns records  ~ (all records that have leaked and are recoverable)
+* & More!  ~ (+ lots more to come)
 
-This program SubZone will find all subdomains for a domain/host you specify, and Dns records of all the 
-Dns server's for that domain/host, including in the records can be found owner/sys-admin email,telephone,location,
-servers,description of any sofwtare using tcp/udp like sic_tcp.(example) wich would mean they domain has a VoIp
-with port info and such. The possibiltes are endless depending on how well the domain/host has configured there 
-Dns server and what information they are leaking.
+This program **SubZone** will find all subdomains for a domain/host you specify, Dns records of all the 
+dns server's for that domain/host, included in the records can be found -
+
+* Owner/sys-admin email.
+* Owner contact info.
+* Server contact info.
+* Ip addresses.
+* Port numbers
+* Telephone numbers.
+* Location of server.
+* Other servers.
+* Description of any sofwtare being used... like tcp/udp or sic_tcp.(VoIp software).
+* & more!.
+
+The possibiltes are endless, depending on how well the domain/host has configured there 
+dns server(s) and what information they are leaking.
 
 ## Getting Started
 
@@ -38,16 +49,27 @@ correct like in facebooks, no dns records.. but got the subdomains.
 
 ### Prerequisites
 
-Python - You will need to have python installed and be using at least python 3+
+**Python** - This is built on Python 3.6, you will need at least Python 3.5+(might work with 3+ i havent tested it - should not be hard to make work tho if dosent!) to use this software. - [https://www.python.org/](https://www.python.org/)
 
-Libraries/Imports - I will be adding a requirments.txt and code to check imports & versions
-and install as necessary. At this momment in time you will need to make sure you have them installed and up too date & working.
+**Libraries** - You will need these libraries to use this software:
+```From the standerd libraries.```
+* Time : n/a
+* Socket : n/a
+* Subprocess : n/a
+* os : n/a
+```Not from the standerd libraries.```
+* Colorama : 0.3.9
+* Requests : 2.18.4
+* Json : 2.0.9
+* Argparse : 1.1
+* Urlib3 : 1.22
 
 ## Deployment
 
 Just double tap and go ;) joke.
-Just use console and use commands in the **Getting Started** section at the top, or you can quickly use 
-python subzone v2.0.py -h (which will give you the options that you need to specify)
+
+Just use console and use commands in the **Getting Started** section at the top, or you can quickly use this command to view help in terminal.
+**python subzone_v2.0.py -h**  ~ (Which will give you options/arguments that you need to specify in order for it to work.)
 
 ## Usage examples with pictures
 
