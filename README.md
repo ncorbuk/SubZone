@@ -30,11 +30,10 @@ To get *started* simply *Fork the repository*, open up console (*cmd/powershell/
 the *SubZone v_2.0.py* (Or the latest up to date version). Then type "**python subzone_v2.0.py -h**" - This will give you the *options/arguments* you need to specify to run file. 
 
 **Key points for arguments/options**...
-- *Key points*
 * Arguments are **-d** *(For domain)* & **-o** *(For output file)*
-* Use http(s) in your domain.  ~  *Ex. -d https://facebook.com (Not https://www.facebook.com)*
+* Use http(s) in your domain.  ~  *Ex. -d https://example.com (Not https://www.example.com)*
 * Specifying output file is optional.  ~   *It will print to the console screen always.*
-* Specifying domain name is *NOT* optional.  ~  *Ex. -o facebook.txt 
+* Specifying domain name is *NOT* optional.  ~  *Ex. -o example.txt 
 
 **Example Usage:**
 ```
