@@ -87,7 +87,7 @@ Just use console and use commands in the **Getting Started** section at the top,
 ![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/facebook_2.png)
 
 ### Zonetransfer (https://zonetransfer.me)
-![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/zonetransfer_1.png)
+![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/zonetransfer_01.png)
 
 ![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/zonetransfer_2.png)
 
