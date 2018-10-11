@@ -1,0 +1,6 @@
+Colorama
+Requests
+Json
+Argparse
+Urlib3
+
