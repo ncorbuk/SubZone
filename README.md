@@ -26,20 +26,26 @@ dns server(s) and what information they are leaking.
 
 ## Getting Started
 
-To get started simply Fork the repository, open up console(cmd/powershell/terminal) cd into repository folder with 
-the SubZone v*.py (* is for latest Version, eg.1.0/2.0 etc). Then once that is done type "python SubZone.py -h"
-that will give you the options/arguments you need to specify to run file. Arguments are as follows - example of commands...
+To get *started* simply *Fork the repository*, open up console (*cmd/powershell/terminal*) cd into repository folder with 
+the *SubZone v_2.0.py* (Or the latest up to date version). Then type "**python subzone_v2.0.py -h**" - This will give you the *options/arguments* you need to specify to run file. 
+
+**Key points for arguments/options**...
+- *Key points*
+* Arguments are **-d** *(For domain)* & **-o** *(For output file)*
+* Use http(s) in your domain.  ~  *Ex. -d https://facebook.com (Not https://www.facebook.com)*
+* Specifying output file is optional.  ~   *It will print to the console screen always.*
+* Specifying domain name is *NOT* optional.  ~  *Ex. -o facebook.txt 
 
 **Example Usage:**
 ```
--d (domain) is True(needed)  -o (output) is False(optional)
+-d (domain) is True(needed)  -o (output) is False (optional)
 - python subzone_v2.0.py -d (domain) -o (output)
 - python subzone_v2.0.py -d https://facebook.com -o facebook.txt
 - python subzone_v2.0.py -d https://zonetransfer.me -o zone.txt
 ```
 
 Above is the command layout, and some examples. If you wish to see how good! my program is.. I highly reccomend trying the above
-TWO arguments with SubZone to see what Subdomains/Dns records you will receive for facebook.com(very many subsdomains) and
+TWO arguments with SubZone to see what Subdomains/Dns records you will receive for facebook.com (very many subsdomains) and
 zonetransfer.me(the kinda of dns records you could get)
 
 - NOTE: You wont always get Subdomains and Dns records. Some domains dont have any subdomains and/or some Dns servers are configured
@@ -49,15 +55,17 @@ correct like in facebooks, no dns records.. but got the subdomains.
 
 ### Prerequisites
 
-**Python** - This is built on Python 3.6, you will need at least Python 3.5+(might work with 3+ i havent tested it - should not be hard to make work tho if dosent!) to use this software. - [https://www.python.org/](https://www.python.org/)
+**Python** - This is built on Python 3.6, you will need at least Python 3.5+ (might work with 3+ i havent tested it - should not be hard to make work tho if dosent!) to use this software. - [https://www.python.org/](https://www.python.org/)
 
 **Libraries** - You will need these libraries to use this software:
-```From the standerd libraries.```
+
+*From the standerd libraries.*
 * Time : n/a
 * Socket : n/a
 * Subprocess : n/a
 * os : n/a
-```Not from the standerd libraries.```
+
+*Not from the standerd libraries.*
 * Colorama : 0.3.9
 * Requests : 2.18.4
 * Json : 2.0.9
@@ -69,7 +77,7 @@ correct like in facebooks, no dns records.. but got the subdomains.
 Just double tap and go ;) joke.
 
 Just use console and use commands in the **Getting Started** section at the top, or you can quickly use this command to view help in terminal.
-**python subzone_v2.0.py -h**  ~ (Which will give you options/arguments that you need to specify in order for it to work.)
+**python subzone_v2.0.py -h**  ~ (Which will give you options/arguments that you will need to specify in order for it to work.)
 
 ## Usage examples with pictures
 
