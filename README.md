@@ -57,7 +57,7 @@ correct like in facebooks, no dns records.. but got the subdomains.
 
 **Python** - This is built on Python 3.6, you will need at least Python 3.5+ (might work with 3+ i havent tested it - should not be hard to make work tho if dosent!) to use this software. - [https://www.python.org/](https://www.python.org/)
 
-**Libraries** - You will need these libraries to use this software:
+**Libraries** - You will need/use these libraries to use this software:
 
 *From the standerd libraries.*
 * Time : n/a
@@ -66,11 +66,11 @@ correct like in facebooks, no dns records.. but got the subdomains.
 * os : n/a
 
 *Not from the standerd libraries.*
-* Colorama : 0.3.9
-* Requests : 2.18.4
-* Json : 2.0.9
-* Argparse : 1.1
-* Urlib3 : 1.22
+* Colorama : >=0.3.9
+* Requests : >=2.18.4
+* Json : >=2.0.9
+* Argparse : >=1.1
+* Urlib3 : >=1.22
 
 ## Deployment
 
