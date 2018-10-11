@@ -99,7 +99,7 @@ Just use console and use commands in the **Getting Started** section at the top,
 
 ## Built With
 
-* [Python]('https://www.python.org/) - Python Software Foundation
+* **Python 3.6.5** - [https://www.python.org/](https://www.python.org/)
 
 ## Contributing
 
