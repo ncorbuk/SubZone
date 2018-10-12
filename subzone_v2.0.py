@@ -13,6 +13,22 @@ import os
 
 
 
+def requirements_check():
+	checks = True
+	requirements = 'requirements.txt'
+	with open(requirements, 'r') as rfp:
+		for line in rfp.readlines():
+			try:
+				exec("import " + line)
+			except:
+				print("[ERROR] Missing module:", line)
+				checks = False
+	if checks == False:
+		exit(1)
+	else:
+		pass
+
+
 init(autoreset=True)
 
 print(Back.RED+Style.BRIGHT+Fore.GREEN+'''
@@ -45,7 +61,7 @@ print(Fore.GREEN+'''
 ██████║      ██║ ╚═╝ ██║╚██████╔╝██║  ██║███████╗██╗                                      
 ╚═════╝      ╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  
 ''')
-print(Back.RED+Fore.GREEN+'Coded by: Nathan.Corbin 2018.')
+print(Back.RED+Fore.GREEN+'Coded by: Nathan.Corbin 2018.\n          @ncorbuk (Twitter).')
 print('')
 
 
@@ -53,7 +69,7 @@ def args_parser():
 	#parse required argument/s needed for program
 	parser = argparse.ArgumentParser()
 	parser.add_argument('-d', '--domain', type=str, required=True, help='domain - to find subdomains(ex use. http(s)://facebook.com)')
-	parser.add_argument('-o', '--output', type=str, required=False, help='filename - file for output data(ex use. facebook.txt)')
+	parser.add_argument('-o', '--output', type=str, required=True, help='filename - file for output data(ex use. facebook.txt)')
 	args = parser.parse_args()
 	return args
 
@@ -231,7 +247,10 @@ class Dns_zone_transfer:
 
 
 if __name__=='__main__':
+	requirements_check()
+
 	seen = False
+
 	abuse = Abuse_certificate_transparency()
 	abuse.parse_url()
 	abuse.request_json()
