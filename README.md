@@ -32,8 +32,8 @@ the *SubZone v_2.0.py* (Or the latest up to date version). Then type "**python s
 **Key points for arguments/options**...
 * Arguments are **-d** *(For domain)* & **-o** *(For output file)*
 * Use http(s) in your domain.  ~  *Ex. -d https://example.com (Not https://www.example.com)*
-* Specifying output file is optional.  ~   *It will print to the console screen always.*
-* Specifying domain name is *NOT* optional.  ~  *Ex. -o example.txt
+* Specifying output file is *NOT* optional.  ~  *Ex. -o example.txt* 
+* Specifying domain name is *NOT* optional.  ~  *Ex. -d https://example.com
 * You may need to change the **shebang** at the top of the source code file. Ex. *#!d:/python 3.6.5/python.exe* (use own path) or for **Linux** use *#!/usr/bin/env python* (Example), **Windows** use *#!disk(c/d/e):/path to python folder/python.exe*
 
 **Example Usage:**
