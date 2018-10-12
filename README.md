@@ -111,7 +111,7 @@ Versioning will be in terms off v1/v2.2/v3 etc. Highest number in version/file i
 
 ## Authors
 
-* **Nathan Corbin** - *All the work* - [ncorbuk](https://github.com/ncorbuk)
+* **Nathan Corbin** - *All the work* - Github:[ncorbuk](https://github.com/ncorbuk) Twitter:[@ncorbuk](https://twitter.com/ncorbuk)
 
 ## Acknowledgments
 
