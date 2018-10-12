@@ -11,22 +11,7 @@ import urllib3
 import subprocess
 import os
 
-
-
-def requirements_check():
-	checks = True
-	requirements = 'requirements.txt'
-	with open(requirements, 'r') as rfp:
-		for line in rfp.readlines():
-			try:
-				exec("import " + line)
-			except:
-				print("[ERROR] Missing module:", line)
-				checks = False
-	if checks == False:
-		exit(1)
-	else:
-		pass
+#Copyright (c) 2018 - Nathan Corbin - @ncorbuk(Twitter)
 
 
 init(autoreset=True)
@@ -65,6 +50,7 @@ print(Back.RED+Fore.GREEN+'Copyright (c) 2018 - Nathan Corbin - @ncorbuk(Twitter
 print('')
 
 
+
 def args_parser():
 	#parse required argument/s needed for program
 	parser = argparse.ArgumentParser()
@@ -74,6 +60,26 @@ def args_parser():
 	return args
 
 
+
+def requirements_check():
+	#check requirements are met for software/program to run correctly
+	checks = True
+	requirements = 'requirements.txt'
+	with open(requirements, 'r') as rfp:
+		for line in rfp.readlines():
+			try:
+				exec("import " + line)
+			except:
+				print("[ERROR] Missing module:", line)
+				checks = False
+	if checks == False:
+		exit(1)
+	else:
+		pass
+
+
+
+active_subdomains = []
 
 class Abuse_certificate_transparency:
 	def __init__(self):
@@ -92,6 +98,7 @@ class Abuse_certificate_transparency:
 
 
 	def request_json(self):
+		#request json data to get list of registered subdomains with cert trans records
 		subdomains = []
 		try:
 			r = requests.get(f'https://crt.sh/?q=%.{abuse.parse_url()}&output=json')
@@ -113,46 +120,47 @@ class Abuse_certificate_transparency:
 
 
 	def active_subs(self):
-		global seen
-		active_subdomains = []
-		if seen == False:
-			for sub in abuse.request_json():
-				try:
-					sub = socket.gethostbyname_ex(sub)
-					active_subdomains.append(sub)
-				except:
-					pass
-			number_all = len(abuse.request_json())
-			number_active = len(active_subdomains)
+		#check registered subdomains to see if active or not
+		global active_subdomains
 
-			Style.RESET_ALL
-
+		for sub in abuse.request_json():
 			try:
-				print('\n',Fore.GREEN+'''{!} There are %s %s %s''' %
-					(Fore.RED+Back.BLACK+str(number_all), Fore.RED+Back.BLACK+'REGISTERED', Fore.GREEN+'subdomains with this domain.'))
-				time.sleep(2)
-				for index, sub in enumerate(abuse.request_json()):
-					print(Fore.GREEN+str(index),Fore.RED+str(sub))
+				sub = socket.gethostbyname_ex(sub)
+				active_subdomains.append(sub)
+			except:
+				pass
+		number_all = len(abuse.request_json())
+		number_active = len(active_subdomains)
 
-				print('\n',Fore.GREEN+'''{!} There are %s %s %s''' %
-					(Fore.RED+Back.BLACK+str(number_active), Fore.RED+Back.BLACK+'ACTIVE', Fore.GREEN+'subdomains with this domain'))
-				time.sleep(2)
+		Style.RESET_ALL
 
-				print(Fore.RED+Back.GREEN+str('DNS SERVER:\t\t\tSUBDOMAIN:\t\t\tIP-ADDR:\t\t\t'))
-				time.sleep(1.3)
+		try:
+			print('\n',Fore.GREEN+'''{!} There are %s %s %s''' %
+				(Fore.RED+Back.BLACK+str(number_all), Fore.RED+Back.BLACK+'REGISTERED', Fore.GREEN+'subdomains with this domain.'))
+			time.sleep(2)
+			for index, sub in enumerate(abuse.request_json()):
+				print(Fore.GREEN+str(index),Fore.RED+str(sub))
 
-				for index, sub in enumerate(active_subdomains):
-					print(Fore.RED+str(index),Fore.GREEN+str(sub[0]),Fore.RED+str(sub[1]),Fore.GREEN+str(sub[2]))
+			print('\n',Fore.GREEN+'''{!} There are %s %s %s''' %
+				(Fore.RED+Back.BLACK+str(number_active), Fore.RED+Back.BLACK+'ACTIVE', Fore.GREEN+'subdomains with this domain'))
+			time.sleep(2)
 
-			except Exception as e:
-					print('{!} active_subdomains//Error: %s' % (e))
-					pass
+			print(Fore.RED+Back.GREEN+str('DNS SERVER:\t\t\tSUBDOMAIN:\t\t\tIP-ADDR:\t\t\t'))
+			time.sleep(1.3)
+
+			for index, sub in enumerate(active_subdomains):
+				print(Fore.RED+str(index),Fore.GREEN+str(sub[0]),Fore.RED+str(sub[1]),Fore.GREEN+str(sub[2]))
+
+		except Exception as e:
+			print('{!} active_subdomains//Error: %s' % (e))
+			pass
 
 		return active_subdomains
 
 
-	def write_file(self):
-		global seen
+	def write_file(self,):
+		#write registerd subdomains and active subdomains to file
+		global active_subdomains
 		try:
 			reg = 'REGISTERED_'+self.output
 			active = 'ACTIVE_'+self.output
@@ -162,13 +170,12 @@ class Abuse_certificate_transparency:
 						text = '%s %s\n' % (index,sub)
 						r.write(text)
 				with open(active,'w') as a:
-					for index, sub in enumerate(abuse.active_subs()):
+					for index, sub in enumerate(active_subdomains):
 						text = '%s %s\n' % (index,sub)
 						a.write(text)
 		except Exception as e:
 			print('write_file//Error: %s' % (e))
 			pass
-		seen = True
 
 
 
@@ -250,8 +257,6 @@ if __name__=='__main__':
 	#main
 	requirements_check()
 
-	seen = False
-
 	abuse = Abuse_certificate_transparency()
 	abuse.parse_url()
 	abuse.request_json()
@@ -261,3 +266,5 @@ if __name__=='__main__':
 	zone = Dns_zone_transfer()
 	zone.nslookup()
 	zone.dns_records()
+
+#Copyright (c) 2018 - Nathan Corbin - @ncorbuk(Twitter)
