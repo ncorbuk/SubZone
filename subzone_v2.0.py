@@ -61,7 +61,7 @@ print(Fore.GREEN+'''
 ██████║      ██║ ╚═╝ ██║╚██████╔╝██║  ██║███████╗██╗                                      
 ╚═════╝      ╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  
 ''')
-print(Back.RED+Fore.GREEN+'Coded by: Nathan.Corbin 2018.\n          @ncorbuk (Twitter).')
+print(Back.RED+Fore.GREEN+'Copyright (c) 2018 - Nathan Corbin - @ncorbuk(Twitter)')
 print('')
 
 
