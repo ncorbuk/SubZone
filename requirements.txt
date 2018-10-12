@@ -1,6 +1,6 @@
-Colorama
-Requests
-Json
-Argparse
-Urlib3
+colorama
+requests
+json
+argparse
+urllib3
 
