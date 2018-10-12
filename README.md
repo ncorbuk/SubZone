@@ -1,7 +1,7 @@
 ![alt text](https://github.com/ncorbuk/SubZone/blob/master/logo.png)
 
 # SubZone
-```HTTP(S)-Subdomains,Dns records, & More!.```
+**```HTTP(S)-Subdomains,Dns records, & More!.```**
 * All subdomains  ~ (all registered subdomains from primary domain/host)
 * All **active** subdomains  ~ (domains that are online and alive!)
 * Dns records  ~ (all records that have leaked and are recoverable)
