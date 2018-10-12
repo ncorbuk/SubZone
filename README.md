@@ -98,6 +98,8 @@ Just use console and use commands in the **Getting Started** section at the top,
 
 ![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/output_docs.png)
 
+* **Output content** - *[View file(s) content](https://github.com/ncorbuk/SubZone/tree/master/Example%20of%20output%20files)*
+
 ## Built With
 
 * **Python 3.6.5** - [https://www.python.org/](https://www.python.org/)
