@@ -153,7 +153,6 @@ class Abuse_certificate_transparency:
 
 	def write_file(self):
 		global seen
-		seen = True
 		try:
 			reg = 'REGISTERED_'+self.output
 			active = 'ACTIVE_'+self.output
@@ -169,6 +168,7 @@ class Abuse_certificate_transparency:
 		except Exception as e:
 			print('write_file//Error: %s' % (e))
 			pass
+		seen = True
 
 
 
