@@ -247,6 +247,7 @@ class Dns_zone_transfer:
 
 
 if __name__=='__main__':
+	#main
 	requirements_check()
 
 	seen = False
