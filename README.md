@@ -38,7 +38,8 @@ the *SubZone v_2.0.py* (Or the latest up to date version). Then type "**python s
 
 **Example Usage:**
 ```
--d (domain) is True(needed)  -o (output) is False (optional)
+-d (domain) is True(needed)  -o (output) is True (needed) - *Was optional but seems that there is a bug and is making the color disapeer on console, was working. uhm :/*
+
 - python subzone_v2.0.py -d (domain) -o (output)
 - python subzone_v2.0.py -d https://facebook.com -o facebook.txt
 - python subzone_v2.0.py -d https://zonetransfer.me -o zone.txt
