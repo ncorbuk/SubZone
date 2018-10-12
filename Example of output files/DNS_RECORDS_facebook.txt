@@ -1,0 +1,37 @@
+Microsoft Windows [Version 10.0.15063]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
+D:\root\python projects\zone transfer&certif trans - subs\SubZone\SubZone-master>nslookup
+Default Server:  UnKnown
+Address:  fd56:8ce6:7ae1:0:7250:afff:fec0:be90
+
+> > Default Server:  b.ns.facebook.com
+Addresses:  2a03:2880:ffff:c:face:b00c:0:35
+	  69.171.255.12
+
+> > [b.ns.facebook.com]
+> Server:  b.ns.facebook.com
+Addresses:  2a03:2880:ffff:c:face:b00c:0:35
+	  69.171.255.12
+
+> 
+D:\root\python projects\zone transfer&certif trans - subs\SubZone\SubZone-master>**********DNS RECORDS**********
+
+Microsoft Windows [Version 10.0.15063]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
+D:\root\python projects\zone transfer&certif trans - subs\SubZone\SubZone-master>nslookup
+Default Server:  UnKnown
+Address:  fd56:8ce6:7ae1:0:7250:afff:fec0:be90
+
+> > Default Server:  a.ns.facebook.com
+Addresses:  2a03:2880:fffe:c:face:b00c:0:35
+	  69.171.239.12
+
+> > [a.ns.facebook.com]
+> Server:  a.ns.facebook.com
+Addresses:  2a03:2880:fffe:c:face:b00c:0:35
+	  69.171.239.12
+
+> 
+D:\root\python projects\zone transfer&certif trans - subs\SubZone\SubZone-master>
