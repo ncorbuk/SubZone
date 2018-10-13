@@ -96,7 +96,7 @@ Just use console and use commands in the **Getting Started** section at the top,
 
 ### Output documents (-o filename.txt)
 
-![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/output_docs.png)
+![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/output_docs01.png)
 
 * **Output content** - *[View file(s) content](https://github.com/ncorbuk/SubZone/tree/master/Example%20of%20output%20files)*
 
