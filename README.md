@@ -42,7 +42,7 @@ the *SubZone v_2.0.py* (Or the latest up to date version). Then type "**python s
 
 - python subzone_v2.0.py -d (domain) -o (output)
 - python subzone_v2.0.py -d https://facebook.com -o facebook.txt
-- python subzone_v2.0.py -d https://zonetransfer.me -o zone.txt
+- python subzone_v2.0.py -d https://zonetransfer.me -o zonetransfer.txt
 ```
 
 Above is the command layout, and some examples. If you wish to see how good! my program is.. I highly reccomend trying the above
