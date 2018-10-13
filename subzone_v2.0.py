@@ -142,7 +142,7 @@ class Abuse_certificate_transparency:
 
 		try:
 			print('\n',Fore.GREEN+'''{!} There are %s %s %s''' %
-				(Fore.RED+Back.BLACK+str(number_all), Fore.RED+Back.BLACK+'REGISTERED', Fore.GREEN+'subdomains with this domain.'))
+				(Fore.RED+Back.BLACK+str(number_all), Fore.RED+Back.BLACK+'REGISTERED', Fore.GREEN+'subdomains for this domain.'))
 			time.sleep(2)
 
 			index = Fore.GREEN+Back.BLACK+str('INDEX:green')
@@ -155,7 +155,7 @@ class Abuse_certificate_transparency:
 				print(Fore.GREEN+str(index),Fore.RED+str(sub))
 
 			print('\n',Fore.GREEN+'''{!} There are %s %s %s''' %
-				(Fore.RED+Back.BLACK+str(number_active), Fore.RED+Back.BLACK+'ACTIVE', Fore.GREEN+'subdomains with this domain.'))
+				(Fore.RED+Back.BLACK+str(number_active), Fore.RED+Back.BLACK+'ACTIVE', Fore.GREEN+'subdomains for this domain.'))
 			time.sleep(2)
 
 			index = Fore.GREEN+Back.BLACK+str('INDEX:green')
@@ -207,7 +207,8 @@ class Dns_zone_transfer:
 		global nameservers
 		#nslookup to find nameservers of target domain
 		dns_white = Fore.RED+Back.BLACK+str('Dns records')
-		print(Fore.GREEN+Back.BLACK+str('\n {!} %s for this domain.\n' % (dns_white)))
+		sec_bit = Fore.GREEN+Back.BLACK+str('for this domain.\n')
+		print(Fore.GREEN+Back.BLACK+str('\n {!} %s %s' % (dns_white, sec_bit)))
 		try:
 			with open('nslookup.txt','w') as output_vale:
 				cmd = subprocess.call('nslookup -type=ns %s' % (self.domain), stdout=output_vale)
