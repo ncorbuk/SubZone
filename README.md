@@ -90,9 +90,9 @@ Just use console and use commands in the **Getting Started** section at the top,
 ### Zonetransfer (https://zonetransfer.me)
 ![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/zonetransfer_01.png)
 
-![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/zonetransfer_2.png)
+![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/zonetransfer_02.png)
 
-![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/zonetransfer_3.png)
+![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/zonetransfer_03.png)
 
 ### Output documents (-o filename.txt)
 
