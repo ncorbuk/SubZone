@@ -139,6 +139,13 @@ class Abuse_certificate_transparency:
 			print('\n',Fore.GREEN+'''{!} There are %s %s %s''' %
 				(Fore.RED+Back.BLACK+str(number_all), Fore.RED+Back.BLACK+'REGISTERED', Fore.GREEN+'subdomains with this domain.'))
 			time.sleep(2)
+
+			index = Fore.GREEN+Back.BLACK+str('INDEX:green')
+			sub_red = Fore.RED+Back.BLACK+str('SUBDOMAIN:red')
+			line = Fore.CYAN+Back.BLACK+str('*****************************')
+			print('\n%s\n%s %s\n%s\n' % (line, index, sub_red, line))
+			time.sleep(1.3)
+
 			for index, sub in enumerate(abuse.request_json()):
 				print(Fore.GREEN+str(index),Fore.RED+str(sub))
 
@@ -146,11 +153,16 @@ class Abuse_certificate_transparency:
 				(Fore.RED+Back.BLACK+str(number_active), Fore.RED+Back.BLACK+'ACTIVE', Fore.GREEN+'subdomains with this domain'))
 			time.sleep(2)
 
-			print(Fore.RED+Back.GREEN+str('DNS SERVER:\t\t\tSUBDOMAIN:\t\t\tIP-ADDR:\t\t\t'))
+			index = Fore.GREEN+Back.BLACK+str('INDEX:green')
+			dns_white = Fore.WHITE+Back.BLACK+str('DNS SERVER:white')
+			sub_red = Fore.RED+Back.BLACK+str('SUBDOMAIN:red')
+			ip_yell = Fore.BLUE+Back.BLACK+str('IP_ADDR:blue')
+			line = Fore.CYAN+Back.BLACK+str('************************************************************')
+			print('\n%s\n%s %s %s %s\n%s\n' % (line, index, dns_white, sub_red, ip_yell, line))
 			time.sleep(1.3)
 
 			for index, sub in enumerate(active_subdomains):
-				print(Fore.RED+str(index),Fore.GREEN+str(sub[0]),Fore.RED+str(sub[1]),Fore.GREEN+str(sub[2]))
+				print(Fore.GREEN+str(index), Fore.WHITE+Back.BLACK+str(sub[0]), Fore.RED+Back.BLACK+str(sub[1]), Fore.BLUE+Back.BLACK+str(sub[2]))
 
 		except Exception as e:
 			print('{!} active_subdomains//Error: %s' % (e))
