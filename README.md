@@ -49,8 +49,8 @@ Above is the command layout, and some examples. If you wish to see how good! my 
 TWO arguments with SubZone to see what Subdomains/Dns records you will receive for facebook.com (very many subsdomains) and
 zonetransfer.me(the kinda of dns records you could get)
 
-- *NOTE*: You wont always get Subdomains and Dns records. Some domains dont have any subdomains and/or some Dns servers are configured
-correct like in facebooks, no dns records.. but got the subdomains.
+- *NOTE*: You wont always get Subdomains and Dns records. Some domains dont have any subdomains and/or some dns servers are configured
+correctly, like in facebook's case its not not leaking dns records.. but got the subdomains.
 
 - *100%*: You will get everything that can be got from the domain/host!
 
