@@ -16,7 +16,7 @@ import os
 
 init(autoreset=True)
 
-print(Back.RED+Style.BRIGHT+Fore.GREEN+'''
+print(Back.BLACK+Style.BRIGHT+Fore.CYAN+'''
                       ███████╗██╗   ██╗██████╗ ███████╗ ██████╗ ███╗   ██╗███████╗                      
 ▄ ██╗▄▄ ██╗▄▄ ██╗▄    ██╔════╝██║   ██║██╔══██╗╚══███╔╝██╔═══██╗████╗  ██║██╔════╝    ▄ ██╗▄▄ ██╗▄▄ ██╗▄
  ████╗ ████╗ ████╗    ███████╗██║   ██║██████╔╝  ███╔╝ ██║   ██║██╔██╗ ██║█████╗       ████╗ ████╗ ████╗
@@ -24,29 +24,34 @@ print(Back.RED+Style.BRIGHT+Fore.GREEN+'''
   ╚═╝   ╚═╝   ╚═╝     ███████║╚██████╔╝██████╔╝███████╗╚██████╔╝██║ ╚████║███████╗      ╚═╝   ╚═╝   ╚═╝ 
                       ╚══════╝ ╚═════╝ ╚═════╝ ╚══════╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝                      ''')
 
-print(Fore.GREEN+'''
+print(Back.BLACK+Fore.RED+'''
 ███████╗██╗   ██╗██████╗ ██████╗  ██████╗ ███╗   ███╗ █████╗ ██╗███╗   ██╗███████╗        
 ██╔════╝██║   ██║██╔══██╗██╔══██╗██╔═══██╗████╗ ████║██╔══██╗██║████╗  ██║██╔════╝        
 ███████╗██║   ██║██████╔╝██║  ██║██║   ██║██╔████╔██║███████║██║██╔██╗ ██║███████╗        
 ╚════██║██║   ██║██╔══██╗██║  ██║██║   ██║██║╚██╔╝██║██╔══██║██║██║╚██╗██║╚════██║        
 ███████║╚██████╔╝██████╔╝██████╔╝╚██████╔╝██║ ╚═╝ ██║██║  ██║██║██║ ╚████║███████║▄█╗     
 ╚══════╝ ╚═════╝ ╚═════╝ ╚═════╝  ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝╚═╝     
-                                                                                          
+                                                                                     ''')
+
+print(Back.BLACK+Fore.WHITE+''' 
 ██████╗ ███╗   ██╗███████╗    ██████╗ ███████╗ ██████╗ ██████╗ ██████╗ ██████╗ ███████╗   
 ██╔══██╗████╗  ██║██╔════╝    ██╔══██╗██╔════╝██╔════╝██╔═══██╗██╔══██╗██╔══██╗██╔════╝   
 ██║  ██║██╔██╗ ██║███████╗    ██████╔╝█████╗  ██║     ██║   ██║██████╔╝██║  ██║███████╗   
 ██║  ██║██║╚██╗██║╚════██║    ██╔══██╗██╔══╝  ██║     ██║   ██║██╔══██╗██║  ██║╚════██║   
 ██████╔╝██║ ╚████║███████║    ██║  ██║███████╗╚██████╗╚██████╔╝██║  ██║██████╔╝███████║▄█╗
-╚═════╝ ╚═╝  ╚═══╝╚══════╝    ╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝
-                                                                                          
+╚═════╝ ╚═╝  ╚═══╝╚══════╝    ╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝)
+                                                                                          ''')
+
+
+print(Back.BLACK+Fore.BLUE+'''
    ██╗       ███╗   ███╗ ██████╗ ██████╗ ███████╗██╗                                      
    ██║       ████╗ ████║██╔═══██╗██╔══██╗██╔════╝██║                                      
 ████████╗    ██╔████╔██║██║   ██║██████╔╝█████╗  ██║                                      
 ██╔═██╔═╝    ██║╚██╔╝██║██║   ██║██╔══██╗██╔══╝  ╚═╝                                      
 ██████║      ██║ ╚═╝ ██║╚██████╔╝██║  ██║███████╗██╗                                      
-╚═════╝      ╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  
-''')
-print(Back.RED+Fore.GREEN+'Copyright (c) 2018 - Nathan Corbin - @ncorbuk(Twitter)')
+╚═════╝      ╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ''')
+
+print(Fore.CYAN+Back.BLACK+'[\n  Copyright (c) 2018 - Nathan Corbin - @ncorbuk(Twitter) </>\n  ]\n')
 print('')
 
 
@@ -150,7 +155,7 @@ class Abuse_certificate_transparency:
 				print(Fore.GREEN+str(index),Fore.RED+str(sub))
 
 			print('\n',Fore.GREEN+'''{!} There are %s %s %s''' %
-				(Fore.RED+Back.BLACK+str(number_active), Fore.RED+Back.BLACK+'ACTIVE', Fore.GREEN+'subdomains with this domain'))
+				(Fore.RED+Back.BLACK+str(number_active), Fore.RED+Back.BLACK+'ACTIVE', Fore.GREEN+'subdomains with this domain.'))
 			time.sleep(2)
 
 			index = Fore.GREEN+Back.BLACK+str('INDEX:green')
@@ -201,6 +206,8 @@ class Dns_zone_transfer:
 	def nslookup(self):
 		global nameservers
 		#nslookup to find nameservers of target domain
+		dns_white = Fore.RED+Back.BLACK+str('Dns records')
+		print(Fore.GREEN+Back.BLACK+str('\n {!} %s for this domain.\n' % (dns_white)))
 		try:
 			with open('nslookup.txt','w') as output_vale:
 				cmd = subprocess.call('nslookup -type=ns %s' % (self.domain), stdout=output_vale)
@@ -215,7 +222,8 @@ class Dns_zone_transfer:
 			os.remove('nslookup.txt')
 			#print(nameservers)
 		except Exception as e:
-			print(e)
+			#print(e)
+			pass
 		return nameservers
 
 
