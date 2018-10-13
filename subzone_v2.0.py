@@ -80,6 +80,7 @@ def requirements_check():
 
 
 active_subdomains = []
+nameservers = []
 
 class Abuse_certificate_transparency:
 	def __init__(self):
@@ -186,9 +187,9 @@ class Dns_zone_transfer:
 
 
 	def nslookup(self):
+		global nameservers
 		#nslookup to find nameservers of target domain
 		try:
-			nameservers = []
 			with open('nslookup.txt','w') as output_vale:
 				cmd = subprocess.call('nslookup -type=ns %s' % (self.domain), stdout=output_vale)
 				with open('nslookup.txt','r') as ns2:
@@ -207,10 +208,11 @@ class Dns_zone_transfer:
 
 
 	def dns_records(self):
+		global nameservers
 		#zone transfer - to get dns records if dns server is not configured properly
 		count = 0
 		try:
-			for ns in zone.nslookup():                                                 
+			for ns in nameservers:                                                 
                                                       
 				with open('gogo.txt','w') as go:
 					go.write('nslookup\nset type=all\nserver %s\nls -d %s\n.\n' % (ns,abuse.parse_url()))
