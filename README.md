@@ -82,7 +82,7 @@ Just use console and use commands in the **Getting Started** section at the top,
 
 ## Usage examples with pictures
 
-### Facebook (https://facebook.com)
+### Facebook (https://facebook.com) ~ "python subzone_v2.0.py -d https://facebook.com -o facebook.txt"
 ![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/facebook_01.png)
 
 ![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/facebook_02.png)
@@ -91,7 +91,7 @@ Just use console and use commands in the **Getting Started** section at the top,
 
 ![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/facebook_04.png)
 
-### Zonetransfer (https://zonetransfer.me)
+### Zonetransfer (https://zonetransfer.me) ~ "python subzone_v2.0.py -d https://zonetransfer.me -o zonetransfer.txt"
 ![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/zonetransfer_1.png)
 
 ![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/zonetransfer_2.png)
