@@ -87,7 +87,7 @@ Just use console and use commands in the **Getting Started** section at the top,
 
 ![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/facebook_02.png)
 
-![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/facebook_03.png)
+![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/facebook_3.png)
 
 ![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/facebook_04.png)
 
