@@ -18,7 +18,7 @@ dns server's for that domain/host, included in the records can be found -
 * Telephone numbers.
 * Location of server.
 * Other servers.
-* Description of any sofwtare being used... like tcp/udp or sic_tcp.(VoIp software).
+* Description of any software being used... like tcp/udp or sic_tcp.(VoIp software).
 * & more!.
 
 The possibiltes are endless, depending on how well the domain/host has configured there 
