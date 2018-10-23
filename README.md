@@ -7,6 +7,7 @@
 * Dns records  ~ (all records that have leaked and are recoverable)
 * Is non-intrusive... leave NO fingerprints, totaly fast and totaly anonymous.
 
+
 This program **SubZone** will find all subdomains for a domain/host you specify, Dns records of all the 
 dns server's for that domain/host, included in the records can be found -
 
@@ -22,7 +23,8 @@ dns server's for that domain/host, included in the records can be found -
 * & more!.
 
 The possibiltes are endless, depending on how well the domain/host has configured there 
-dns server(s) and what information they are leaking.
+dns server(s) and what information they are leaking. This helps penetration testers and 
+bug hunters collect and gather subdomains for the domain they are targeting. 
 
 ## Getting Started
 
@@ -118,9 +120,9 @@ Just use console and use commands in the **Getting Started** section at the top,
 
 Please read [CONTRIBUTING.md] for details on our code of conduct, and the process for submitting pull requests.
 
-## Versioning
+## Version
 
-Versioning will be in terms off v1/v2.2/v3 etc. Highest number in version/file is the most up too date version of software.
+**Current version is 2.0**
 
 ## Authors
 
