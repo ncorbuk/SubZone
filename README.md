@@ -5,7 +5,7 @@
 * All subdomains  ~ (all registered subdomains from primary domain/host)
 * All **active** subdomains  ~ (domains that are online and alive!)
 * Dns records  ~ (all records that have leaked and are recoverable)
-* & More!  ~ (+ lots more to come)
+* Is non-intrusive... leave NO fingerprints, totaly fast and totaly anonymous.
 
 This program **SubZone** will find all subdomains for a domain/host you specify, Dns records of all the 
 dns server's for that domain/host, included in the records can be found -
