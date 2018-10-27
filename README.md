@@ -40,6 +40,10 @@ the *SubZone v_2.0.py* (Or the latest up to date version). Then type "**python s
 
 **Example Usage:**
 ```
+First install software if havent already - pip install subzone
+
+then...
+
 -d (domain) is True(needed)  -o (output) is True (needed) - *Was optional but seems that there is a bug and is making the color disapeer on console, was working. uhm :/*
 
 - python subzone_v2.0.py -d (domain) -o (output)
@@ -77,10 +81,8 @@ correctly, like in facebook's case its not not leaking dns records.. but got the
 
 ## Deployment
 
-Just double tap and go ;) joke.
-
-Just use console and use commands in the **Getting Started** section at the top, or you can quickly use this command to view help in terminal.
-**python subzone_v2.0.py -h**  ~ (Which will give you options/arguments that you will need to specify in order for it to work.)
+*First you need to install this software, very easily using pip* - **pip install subzone**
+*Then to use software, read the **getting started section** of this readme page.*
 
 ## Usage examples with pictures
 
@@ -122,7 +124,9 @@ Please read [CONTRIBUTING.md] for details on our code of conduct, and the proces
 
 ## Version
 
-**Current version is filename: subzone.py**
+**Use pip installiaion for easy install and most up too date version - pip install subzone**
+**Current version is: 2.0
+**Current is filename: subzone.py**
 
 ## Authors
 
