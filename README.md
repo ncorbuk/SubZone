@@ -127,7 +127,7 @@ Please read [CONTRIBUTING.md] for details on our code of conduct, and the proces
 ## Version
 
 **Use pip installiaion for easy install and most up too date version - pip install subzone OR Fork repository**
-**Current version is: 0.2.0
+**Current version is: 0.2.2**
 **Current is filename: subzone.py**
 
 ## Authors
