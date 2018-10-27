@@ -1,5 +1,4 @@
 colorama
 requests
-json
 argparse
 urllib3
