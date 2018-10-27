@@ -1,4 +1,4 @@
-#!d:/python 3.6.5/python.exe
+	#!d:/python 3.6.5/python.exe
 
 #imports
 from colorama import init, Fore, Back, Style
@@ -106,6 +106,7 @@ def requirements_check():
 
 
 
+
 active_subdomains = []
 nameservers = []
 
@@ -120,7 +121,7 @@ class Abuse_certificate_transparency:
 		try:
 			host = urllib3.util.url.parse_url(self.domain).host
 		except Exception as e:
-			print('parse_url//Error: %s' % (e))
+			print(f'parse_url//Error: {e}')
 			pass
 		return host
 
@@ -139,10 +140,10 @@ class Abuse_certificate_transparency:
 					for sub in (json_data):
 						subdomains.append(sub['name_value'])
 				except Exception as e:
-					print('json_data:Error %s' % (e))
+					print(f'json_data:Error {e}')
 					pass
 		except Exception as e:
-			print('request_json//Error: %s' % (e))
+			print(f'request_json//Error: {e}')
 			pass
 		return subdomains
 
@@ -192,7 +193,7 @@ class Abuse_certificate_transparency:
 				print(Fore.GREEN+str(index), Fore.WHITE+Back.BLACK+str(sub[0]), Fore.RED+Back.BLACK+str(sub[1]), Fore.BLUE+Back.BLACK+str(sub[2]))
 
 		except Exception as e:
-			print('{!} active_subdomains//Error: %s' % (e))
+			print(f'active_subdomains//Error: {e}')
 			pass
 
 		return active_subdomains
@@ -207,14 +208,14 @@ class Abuse_certificate_transparency:
 			if self.output is not None:
 				with open(reg,'w') as r:
 					for index, sub in enumerate(abuse.request_json()):
-						text = '%s %s\n' % (index,sub)
+						text = f'{index} {sub}\n'
 						r.write(text)
 				with open(active,'w') as a:
 					for index, sub in enumerate(active_subdomains):
-						text = '%s %s\n' % (index,sub)
+						text = f'{index} {sub}\n'
 						a.write(text)
 		except Exception as e:
-			print('write_file//Error: %s' % (e))
+			print(f'write_file//Error: {e}')
 			pass
 
 
@@ -233,7 +234,7 @@ class Dns_zone_transfer:
 		print(Fore.GREEN+Back.BLACK+str('\n {!} %s %s' % (dns_white, sec_bit)))
 		try:
 			with open('nslookup.txt','w') as output_vale:
-				cmd = subprocess.call('nslookup -type=ns %s' % (self.domain), stdout=output_vale)
+				cmd = subprocess.call(f'nslookup -type=ns {self.domain}', stdout=output_vale)
 			with open('nslookup.txt','r') as ns2:
 				for line in ns2.readlines():
 					if 'nameserver' in line:
@@ -256,7 +257,7 @@ class Dns_zone_transfer:
 			for ns in nameservers:                                                 
                                                       
 				with open('gogo.txt','w') as go:
-					go.write('nslookup\nset type=all\nserver %s\nls -d %s\n.\n' % (ns,abuse.parse_url()))
+					go.write(f'nslookup\nset type=all\nserver {ns}\nls -d {abuse.parse_url()}\n.\n')
 
 				if self.output is not None:
 					filename = 'DNS_RECORDS_%s' % (self.output)
