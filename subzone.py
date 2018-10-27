@@ -236,14 +236,13 @@ class Dns_zone_transfer:
 		try:
 			with open('nslookup.txt','w') as output_vale:
 				cmd = subprocess.call('nslookup -type=ns %s' % (self.domain), stdout=output_vale)
-				with open('nslookup.txt','r') as ns2:
-					for line in ns2.readlines():
-						if 'nameserver' in line:
-							line = line.split(' ')[2]
-							nameservers.append(line)
-						else:
-							pass
-			ns2.close()
+			with open('nslookup.txt','r') as ns2:
+				for line in ns2.readlines():
+					if 'nameserver' in line:
+						line = line.split(' ')[2]
+						nameservers.append(line)
+					else:
+						pass
 			os.remove('nslookup.txt')
 			#print(nameservers)
 		except Exception as e:
