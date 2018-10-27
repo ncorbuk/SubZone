@@ -122,7 +122,7 @@ Please read [CONTRIBUTING.md] for details on our code of conduct, and the proces
 
 ## Version
 
-**Current version is 2.0**
+**Current version is filename: subzone.py**
 
 ## Authors
 
