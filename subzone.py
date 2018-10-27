@@ -103,8 +103,6 @@ def requirements_check():
 				checks = False
 	if checks == False:
 		exit(1)
-	else:
-		pass
 
 
 
@@ -241,8 +239,7 @@ class Dns_zone_transfer:
 					if 'nameserver' in line:
 						line = line.split(' ')[2]
 						nameservers.append(line)
-					else:
-						pass
+
 			os.remove('nslookup.txt')
 			#print(nameservers)
 		except Exception as e:
