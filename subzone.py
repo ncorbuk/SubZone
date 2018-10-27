@@ -121,8 +121,8 @@ class Abuse_certificate_transparency:
 		try:
 			host = urllib3.util.url.parse_url(self.domain).host
 		except Exception as e:
-			print(f'parse_url//Error: {e}')
-			pass
+			print(f'Invalid - Domain, try again...')
+			exit(1)
 		return host
 
 
