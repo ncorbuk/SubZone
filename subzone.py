@@ -1,4 +1,4 @@
-	#!d:/python 3.6.5/python.exe
+#!d:/python 3.6.5/python.exe
 
 #imports
 from colorama import init, Fore, Back, Style
