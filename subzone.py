@@ -10,6 +10,7 @@ import time
 import urllib3
 import subprocess
 import os
+import sys
 
 #Copyright (c) 2018 - Nathan Corbin - @ncorbuk(Twitter)
 
@@ -102,7 +103,7 @@ def requirements_check():
 				print("[ERROR] Missing module:", line)
 				checks = False
 	if checks == False:
-		exit(1)
+		sys.exit(1)
 
 
 
@@ -122,7 +123,7 @@ class Abuse_certificate_transparency:
 			host = urllib3.util.url.parse_url(self.domain).host
 		except Exception as e:
 			print(f'Invalid - Domain, try again...')
-			exit(1)
+			sys.exit(1)
 		return host
 
 
