@@ -4,14 +4,14 @@ pypi - https://pypi.org/project/subzone/ - **pip install subzone**
 
 # SubZone
 **```HTTP(S)-Subdomains,Dns records, & More!```**
-* All subdomains  ~ (all registered subdomains from primary domain/host)
-* All **active** subdomains  ~ (domains that are online and alive!)
-* Dns records  ~ (all records that have leaked and are recoverable)
-* Is non-intrusive... leave NO fingerprints, totaly fast and totaly anonymous.
+* All **registered** subdomains!
+* All **active** subdomains!
+* All **Dns records**!
+* Is **non-intrusive** - leave **NO fingerprints**, *totaly fast and totaly anonymous.*
 
-
-This program **SubZone** will find all subdomains for a domain/host you specify, Dns records of all the 
-dns server's for that domain/host, included in the records can be found -
+**SubZone** - Gathers all registerd subdomains for target domain, and then checks too see which ones are active subdomains, 
+also will go through dns servers and do zonetransfer to see if any server have been miss configured and are leaking valuable
+information.
 
 * Owner/sys-admin email.
 * Owner contact info.
@@ -20,32 +20,31 @@ dns server's for that domain/host, included in the records can be found -
 * Port numbers
 * Telephone numbers.
 * Location of server.
-* Other servers.
-* Description of any software being used... like tcp/udp or sic_tcp.(VoIp software).
+* Other servers
+* Software.
 * & more!.
+*(Check out dns record pics for zonetransfer.me at bottom of page for example)*
 
-The possibiltes are endless, depending on how well the domain/host has configured there 
-dns server(s) and what information they are leaking. This helps penetration testers and 
-bug hunters collect and gather subdomains for the domain they are targeting. 
+This helps penetration testers and bug hunters collect and gather subdomains and information for the domain they are targeting. 
 
 ## Getting Started
 
-To get *started* simply *Fork the repository*, open up console (*cmd/powershell/terminal*) cd into repository folder with 
-the *SubZone v_2.0.py* (Or the latest up to date version). Then type "**python subzone_v2.0.py -h**" - This will give you the *options/arguments* you need to specify to run file. 
+Either Fork the latest repository or use pip to get latest version of subzone.
+For easy install of python package and all dependencies use - *pip install subzone*
 
-**Key points for arguments/options**...
+**Key points**
 * Arguments are **-d** *(For domain)* & **-o** *(For output file)*
 * Use http(s) in your domain.  ~  *Ex. -d https://example.com (Not https://www.example.com)*
 * Specifying output file is *NOT* optional.  ~  *Ex. -o example.txt* 
 * Specifying domain name is *NOT* optional.  ~  *Ex. -d https://example.com
-* You may need to change the **shebang** at the top of the source code file. Ex. *#!d:/python 3.6.5/python.exe* (use own path) or for **Linux** use *#!/usr/bin/env python* (Example), **Windows** use *#!disk(c/d/e):/path to python folder/python.exe*
+
+**Can also be used as an import to your own script/program** 
+*from subdomain import subzone*
+then use **subzone.get(url)** eg. subzone.get('https://facebook.com')
+Will print out a list of registerd domains and active domains - in color - 
 
 **Example Usage:**
 ```
-First install software if havent already - pip install subzone OR fork repo
-
-then cd in subzone folder eg repo folder or if used pip go into (windows) python3.6.5/lib/site-packages/subzone
-
 -d (domain) is True(needed)  -o (output) is True (needed) - *Was optional but seems that there is a bug and is making the color disapeer on console, was working. uhm :/*
 
 - python subzone_v2.0.py -d (domain) -o (output)
@@ -53,20 +52,14 @@ then cd in subzone folder eg repo folder or if used pip go into (windows) python
 - python subzone_v2.0.py -d https://zonetransfer.me -o zonetransfer.txt
 ```
 
-Above is the command layout, and some examples. If you wish to see how good! my program is.. I highly reccomend trying the above
-TWO arguments with SubZone to see what Subdomains/Dns records you will receive for facebook.com (very many subsdomains) and
-zonetransfer.me(the kinda of dns records you could get)
-
-- *NOTE*: You wont always get Subdomains and Dns records. Some domains dont have any subdomains and/or some dns servers are configured
-correctly, like in facebook's case its not not leaking dns records.. but got the subdomains.
-
-- *100%*: You will get everything that can be got from the domain/host!
+- *100%*: You will get everything that can be possibly got from the domain/host all whilst leaving **NO** fingerprints.
 
 ### Prerequisites
 
 **Python** - This is built on Python 3.6, you will need at least Python 3.5+ (might work with 3+ i havent tested it - should not be hard to make work tho if dosent!) to use this software. - [https://www.python.org/](https://www.python.org/)
 
-**Libraries** - You will need/use these libraries to use this software:
+**Libraries** - You will need/use these libraries to use this software: 
+*pip install subzone - will take care of this automatically.*
 
 *From the standerd libraries.*
 * Time : n/a
@@ -83,10 +76,10 @@ correctly, like in facebook's case its not not leaking dns records.. but got the
 
 ## Deployment
 
-*First you need to install this software, very easily using pip* - **pip install subzone** *OR Fork this repository*
-*Then to use software, read the **getting started section** of this readme page.*
-
-*Hint* - Cd into subzone folder and use command below/above
+Once subzone is on your system, open up command prompt and cd in directory with subzone.py, from there use subzone.py -d "https://facebook.com" -o "facebook.txt" to see subdomains and dns records for target domain(facebook)
+**OR** 
+You can import subzone , from subdomain import subzone, then use subzone.get('urlhere.com') to use in your own script/program
+and it will print target url subdomains(registered&active) in color - for console.
 
 ## Usage examples with pictures
 
@@ -129,7 +122,7 @@ Please read [CONTRIBUTING.md] for details on our code of conduct, and the proces
 ## Version
 
 **Use pip installiaion for easy install and most up too date version - pip install subzone OR Fork repository**
-**Current version is: 0.2.4**
+**Current version is: 0.2.6**
 **Current is filename: subzone.py**
 
 ## Authors
