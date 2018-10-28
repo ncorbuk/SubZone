@@ -1,4 +1,4 @@
-![alt text](https://github.com/ncorbuk/SubZone/blob/master/logo_.png)
+![alt text](https://raw.githubusercontent.com/ncorbuk/SubZone/master/logo_.png)
 
 # SubZone
 **```HTTP(S)-Subdomains,Dns records, & More!```**
