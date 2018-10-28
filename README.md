@@ -123,8 +123,9 @@ Please read [CONTRIBUTING.md] for details on our code of conduct, and the proces
 
 ## Version
 
-**Current version is: 0.2.6**
-**Current is filename: subzone.py**
+*Current version: 0.2.7*
+
+*Current filename: subzone.py*
 
 ## Authors
 
