@@ -2,7 +2,7 @@
 
 **GitHub - https://github.com/ncorbuk/SubZone**
 
-**pypi - https://pypi.org/project/subzone/ - **pip install subzone**
+**pypi - https://pypi.org/project/subzone/**
 
 # SubZone
 **```HTTP(S)-Subdomains,Dns records, & More!```**
