@@ -68,12 +68,12 @@ Will print out a list of registerd domains and active domains - in color -
 * Socket : n/a
 * Subprocess : n/a
 * os : n/a
+* Argparse : n/a
+* Json : n/a
 
 *Not from the standerd libraries.*
 * Colorama : >=0.3.9
 * Requests : >=2.18.4
-* Json : >=2.0.9
-* Argparse : >=1.1
 * Urlib3 : >=1.22
 
 ## Deployment
