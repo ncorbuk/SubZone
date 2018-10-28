@@ -1,6 +1,6 @@
 ![alt text](https://raw.githubusercontent.com/ncorbuk/SubZone/master/logo_.png)
 
-pypi - https://pypi.org/project/subzone/ - *pip install subzone*
+pypi - https://pypi.org/project/subzone/ - **pip install subzone**
 
 # SubZone
 **```HTTP(S)-Subdomains,Dns records, & More!```**
