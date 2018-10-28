@@ -78,10 +78,7 @@ Will print out a list of registerd domains and active domains - in color -
 
 ## Deployment
 
-Once subzone is on your system, open up command prompt and cd in directory with subzone.py, from there use subzone.py -d "https://facebook.com" -o "facebook.txt" to see subdomains and dns records for target domain(facebook)
-**OR** 
-You can import subzone , from subdomain import subzone, then use subzone.get('urlhere.com') to use in your own script/program
-and it will print target url subdomains(registered&active) in color - for console.
+subzone is mainly to be used in console using the commands stated above, *OR* you can use **from subdomain import subzone** in your own script/program and use the following command **subzone.get('https://website.com')** to invoke the subdomain function in your own python code.
 
 ## Usage examples with pictures
 
