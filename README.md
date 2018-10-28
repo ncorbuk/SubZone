@@ -9,9 +9,9 @@
 * All **registered** subdomains!
 * All **active** subdomains!
 * All **Dns records**!
-* Is **non-intrusive** - leave **NO fingerprints**, *totaly fast and totaly anonymous.*
+* Is **non-intrusive** - leave **NO fingerprints**, *totally fast and totally anonymous.*
 
-**SubZone** - Gathers all registerd subdomains for target domain, and then checks too see which ones are active subdomains, 
+**SubZone** - Gathers all registard subdomains for target domain, and then checks too see which ones are active subdomains, 
 also will go through dns servers and do zonetransfer to see if any server have been miss configured and are leaking valuable
 information.
 
@@ -38,17 +38,16 @@ For easy install of python package and all dependencies use - *pip install subzo
 * Arguments are **-d** *(For domain)* & **-o** *(For output file)*
 * Use http(s) in your domain.  ~  *Ex. -d https://example.com (Not https://www.example.com)*
 * Specifying output file is *NOT* optional.  ~  *Ex. -o example.txt* 
-* Specifying domain name is *NOT* optional.  ~  *Ex. -d https://example.com
+* Specifying domain name is *NOT* optional.  ~  *Ex. -d https://example.com*
 
 **Can also be used as an import to your own script/program** 
 *from subdomain import subzone*
 then use **subzone.get(url)** eg. subzone.get('https://facebook.com')
-Will print out a list of registerd domains and active domains - in color - 
+Will print out a list of registard domains and active domains - in color - 
 
 **Example Usage:**
 ```
--d (domain) is True(needed)  -o (output) is True (needed) - *Was optional but seems that there is a bug and is making the color disapeer on console, was working. uhm :/*
-
+-d (domain) is True(needed)  -o (output) is True (needed) - 
 - python subzone_v2.0.py -d (domain) -o (output)
 - python subzone_v2.0.py -d https://facebook.com -o facebook.txt
 - python subzone_v2.0.py -d https://zonetransfer.me -o zonetransfer.txt
@@ -58,12 +57,12 @@ Will print out a list of registerd domains and active domains - in color -
 
 ### Prerequisites
 
-**Python** - This is built on Python 3.6, you will need at least Python 3.5+ (might work with 3+ i havent tested it - should not be hard to make work tho if dosent!) to use this software. - [https://www.python.org/](https://www.python.org/)
+**Python** - This is built on Python 3.6, you will need at least Python 3.5+ (might work with 3+ i haven't tested it - should not be hard to make work tho if doesn't!) to use this software. - [https://www.python.org/](https://www.python.org/)
 
 **Libraries** - You will need/use these libraries to use this software: 
 *pip install subzone - will take care of this automatically.*
 
-*From the standerd libraries.*
+*From the standard libraries.*
 * Time : n/a
 * Socket : n/a
 * Subprocess : n/a
@@ -71,7 +70,7 @@ Will print out a list of registerd domains and active domains - in color -
 * Argparse : n/a
 * Json : n/a
 
-*Not from the standerd libraries.*
+*Not from the standard libraries.*
 * Colorama : >=0.3.9
 * Requests : >=2.18.4
 * Urlib3 : >=1.22
@@ -85,28 +84,28 @@ subzone is mainly to be used in console using the commands stated above, *OR* yo
 ### Facebook (https://facebook.com)
 **python subzone_v2.0.py -d https://facebook.com -o facebook.txt**
 
-![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/facebook_01.png)
+![alt text](https://raw.githubusercontent.com/ncorbuk/SubZone/master/Usage_pictures/facebook_01.png)
 
-![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/facebook_02.png)
+![alt text](https://raw.githubusercontent.com/ncorbuk/SubZone/master/Usage_pictures/facebook_02.png)
 
-![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/facebook_3.png)
+![alt text](https://raw.githubusercontent.com/ncorbuk/SubZone/master/Usage_pictures/facebook_3.png)
 
-![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/facebook_04.png)
+![alt text](https://raw.githubusercontent.com/ncorbuk/SubZone/master/Usage_pictures/facebook_04.png)
 
 ### Zonetransfer (https://zonetransfer.me)
 **python subzone_v2.0.py -d https://zonetransfer.me -o zonetransfer.txt**
 
-![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/zonetransfer_1.png)
+![alt text](https://raw.githubusercontent.com/ncorbuk/SubZone/master/Usage_pictures/zonetransfer_1.png)
 
-![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/zonetransfer_2.png)
+![alt text](https://raw.githubusercontent.com/ncorbuk/SubZone/master/Usage_pictures/zonetransfer_2.png)
 
-![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/zonetransfer_3.png)
+![alt text](https://raw.githubusercontent.com/ncorbuk/SubZone/master/Usage_pictures/zonetransfer_3.png)
 
-![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/zonetransfer_4.png)
+![alt text](https://raw.githubusercontent.com/ncorbuk/SubZone/master/Usage_pictures/zonetransfer_4.png)
 
 ### Output documents (-o filename.txt)
 
-![alt text](https://github.com/ncorbuk/SubZone/blob/master/Usage_pictures/output_docs01.png)
+![alt text](https://raw.githubusercontent.com/ncorbuk/SubZone/master/Usage_pictures/output_docs01.png)
 
 * **Output content** - *[View file(s) content](https://github.com/ncorbuk/SubZone/tree/master/Example%20of%20output%20files)*
 
@@ -120,7 +119,7 @@ Please read [CONTRIBUTING.md] for details on our code of conduct, and the proces
 
 ## Version
 
-*Current version: 0.2.7*
+*Current version: 0.2.8*
 
 *Current filename: subzone.py*
 
@@ -131,9 +130,8 @@ Please read [CONTRIBUTING.md] for details on our code of conduct, and the proces
 ## Acknowledgments
 
 * I took inspiration from [UnaPibaGeek](https://github.com/UnaPibaGeek) and her *ctfr* code.(check her out, great stuff)
-* I took inspiration from [DigiNinja - DigiNinja](https://zonetransfer.me) for setting up *zonetransfer.me* wich is purposely *vulnerable* and not setup correctly to show how a *dns server* can *betray* you and *leak* information if you dont know what your doing.
+* I took inspiration from [DigiNinja - DigiNinja](https://zonetransfer.me) for setting up *zonetransfer.me* which is purposely *vulnerable* and not setup correctly to show how a *dns server* can *betray* you and *leak* information if you don't know what your doing.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
