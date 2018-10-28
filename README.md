@@ -1,5 +1,7 @@
 ![alt text](https://raw.githubusercontent.com/ncorbuk/SubZone/master/logo_.png)
 
+pypi - https://pypi.org/project/subzone/ - *pip install subzone*
+
 # SubZone
 **```HTTP(S)-Subdomains,Dns records, & More!```**
 * All subdomains  ~ (all registered subdomains from primary domain/host)
@@ -127,7 +129,7 @@ Please read [CONTRIBUTING.md] for details on our code of conduct, and the proces
 ## Version
 
 **Use pip installiaion for easy install and most up too date version - pip install subzone OR Fork repository**
-**Current version is: 0.2.2**
+**Current version is: 0.2.4**
 **Current is filename: subzone.py**
 
 ## Authors
