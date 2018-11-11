@@ -11,7 +11,7 @@
 * All **Dns records**!
 * Is **non-intrusive** - leave **NO fingerprints**, *totally fast and totally anonymous.*
 
-**SubZone** - Gathers all registard subdomains for target domain, and then checks too see which ones are active subdomains, 
+**SubZone** - Gathers all registered subdomains for target domain, and then checks too see which ones are active subdomains, 
 also will go through dns servers and do zonetransfer to see if any server have been miss configured and are leaking valuable
 information.
 
@@ -43,7 +43,7 @@ For easy install of python package and all dependencies use - *pip install subzo
 **Can also be used as an import to your own script/program** 
 *from subdomain import subzone*
 then use **subzone.get(url)** eg. subzone.get('https://facebook.com')
-Will print out a list of registard domains and active domains - in color - 
+Will print out a list of registered domains and active domains - in color - 
 
 **Example Usage:**
 ```
@@ -82,7 +82,7 @@ subzone is mainly to be used in console using the commands stated above, *OR* yo
 ## Usage examples with pictures
 
 ### Facebook (https://facebook.com)
-**python subzone_v2.0.py -d https://facebook.com -o facebook.txt**
+**python subzone.py -d https://facebook.com -o facebook.txt**
 
 ![alt text](https://raw.githubusercontent.com/ncorbuk/SubZone/master/Usage_pictures/facebook_01.png)
 
@@ -93,7 +93,7 @@ subzone is mainly to be used in console using the commands stated above, *OR* yo
 ![alt text](https://raw.githubusercontent.com/ncorbuk/SubZone/master/Usage_pictures/facebook_04.png)
 
 ### Zonetransfer (https://zonetransfer.me)
-**python subzone_v2.0.py -d https://zonetransfer.me -o zonetransfer.txt**
+**python subzone.py -d https://zonetransfer.me -o zonetransfer.txt**
 
 ![alt text](https://raw.githubusercontent.com/ncorbuk/SubZone/master/Usage_pictures/zonetransfer_1.png)
 
