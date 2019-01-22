@@ -4,6 +4,8 @@
 
 **pypi - https://pypi.org/project/subzone/**
 
+**For python tutorials: https://bit.ly/2U58Lt9**
+
 # SubZone
 **```HTTP(S)-Subdomains,Dns records, & More!```**
 * All **registered** subdomains!
