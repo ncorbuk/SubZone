@@ -130,7 +130,7 @@ Please read [CONTRIBUTING.md] for details on our code of conduct, and the proces
 
 ## Authors
 
-* **Nathan Corbin** - *Github*: [ncorbuk](https://github.com/ncorbuk) - *Twitter*: [@ncorbuk](https://twitter.com/ncorbuk)
+* **Nathan Corbin** - *Github*: [ncorbuk](https://github.com/ncorbuk)
 
 ## Acknowledgments
 
