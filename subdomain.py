@@ -34,7 +34,7 @@ class subzone:
 				print('{!} host status-code: %s\n ~ unable to access records using this abuse certificate transparency method' % (r.status_code))
 			else:
 				try:
-					json_data = json.loads('[%s]' % (r.text.replace('}{', '},{')))
+					json_data = json.loads(r.text)
 					for sub in (json_data):
 						subdomains.append(sub['name_value'])
 				except Exception as e:
