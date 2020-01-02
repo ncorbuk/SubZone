@@ -145,7 +145,10 @@ class Abuse_certificate_transparency:
 		for sub in abuse.request_json():
 			try:
 				sub = socket.gethostbyname_ex(sub)
-				active_subdomains.append(sub)
+				if sub in active_subdomains:
+					pass
+				else:
+					active_subdomains.append(sub)
 			except:
 				continue
 		number_all = len(abuse.request_json())
@@ -154,7 +157,7 @@ class Abuse_certificate_transparency:
 		Style.RESET_ALL
 
 		try:
-			print('\n',Fore.GREEN+'''{!} There are %s %s %s''' %
+			print('\n',Fore.GREEN+'''\n\n{!} There are %s %s %s''' %
 				(Fore.RED+Back.BLACK+str(number_all), Fore.RED+Back.BLACK+'REGISTERED', Fore.GREEN+'subdomains for this domain.'))
 			time.sleep(2)
 
@@ -165,9 +168,9 @@ class Abuse_certificate_transparency:
 			time.sleep(1.3)
 
 			for index, sub in enumerate(abuse.request_json()):
-				print(Fore.GREEN+str(index),Fore.RED+str(sub))
+				print(Fore.GREEN+str(index+1),Fore.RED+str(sub))
 
-			print('\n',Fore.GREEN+'''{!} There are %s %s %s''' %
+			print('\n',Fore.GREEN+'''\n\n{!} There are %s %s %s''' %
 				(Fore.RED+Back.BLACK+str(number_active), Fore.RED+Back.BLACK+'ACTIVE', Fore.GREEN+'subdomains for this domain.'))
 			time.sleep(2)
 
@@ -180,7 +183,7 @@ class Abuse_certificate_transparency:
 			time.sleep(1.3)
 
 			for index, sub in enumerate(active_subdomains):
-				print(Fore.GREEN+str(index), Fore.WHITE+Back.BLACK+str(sub[0]), Fore.RED+Back.BLACK+str(sub[1]), Fore.BLUE+Back.BLACK+str(sub[2]))
+				print(Fore.GREEN+str(index+1), Fore.WHITE+Back.BLACK+str(sub[0]), Fore.RED+Back.BLACK+str(sub[1]), Fore.BLUE+Back.BLACK+str(sub[2]))
 
 		except Exception as e:
 			print(f'active_subdomains//Error: {e}')
@@ -221,7 +224,10 @@ class Dns_zone_transfer:
 		#nslookup to find nameservers of target domain
 		dns_white = Fore.RED+Back.BLACK+str('Dns records')
 		sec_bit = Fore.GREEN+Back.BLACK+str('for this domain.\n')
-		print(Fore.GREEN+Back.BLACK+str('\n {!} %s %s' % (dns_white, sec_bit)))
+		print(Fore.GREEN+Back.BLACK+str('\n\n\n{!} %s %s' % (dns_white, sec_bit)))
+		line = Fore.CYAN+Back.BLACK+str('************************************************************')
+		records = Fore.GREEN+Back.BLACK+str('DNS RECORDS:green')
+		print('%s\n%s\n%s\n' % (line, records, line))
 		try:
 			with open('nslookup.txt','w') as output_vale:
 				cmd = subprocess.call(f'nslookup -type=ns {self.domain}', stdout=output_vale)
