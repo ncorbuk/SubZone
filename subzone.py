@@ -1,5 +1,3 @@
-#!d:/python 3.6.5/python.exe
-
 #imports
 from colorama import init, Fore, Back, Style
 import requests
@@ -11,20 +9,14 @@ import urllib3
 import subprocess
 import os
 import sys
+import time
 
-#Copyright (c) 2018 - Nathan Corbin - @ncorbuk(Twitter)
+# Copyright (c) 2018 - Nathan Corbin/w3w3w3
+# YouTube channel: youtube.com/w3w3w3
+# Tip me @ BitCoin:1EHmioBmujNAyVs5A6Uo1nfto9JZhGBDLd
 
 
 init(autoreset=True)
-
-
-print(Back.BLACK+Style.BRIGHT+Fore.CYAN+'''
-                      ███████╗██╗   ██╗██████╗ ███████╗ ██████╗ ███╗   ██╗███████╗                      
-▄ ██╗▄▄ ██╗▄▄ ██╗▄    ██╔════╝██║   ██║██╔══██╗╚══███╔╝██╔═══██╗████╗  ██║██╔════╝    ▄ ██╗▄▄ ██╗▄▄ ██╗▄
- ████╗ ████╗ ████╗    ███████╗██║   ██║██████╔╝  ███╔╝ ██║   ██║██╔██╗ ██║█████╗       ████╗ ████╗ ████╗
-▀╚██╔▀▀╚██╔▀▀╚██╔▀    ╚════██║██║   ██║██╔══██╗ ███╔╝  ██║   ██║██║╚██╗██║██╔══╝      ▀╚██╔▀▀╚██╔▀▀╚██╔▀
-  ╚═╝   ╚═╝   ╚═╝     ███████║╚██████╔╝██████╔╝███████╗╚██████╔╝██║ ╚████║███████╗      ╚═╝   ╚═╝   ╚═╝ 
-                      ╚══════╝ ╚═════╝ ╚═════╝ ╚══════╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝                      ''')
 
 
 print(Back.BLACK+Fore.GREEN+r'''
@@ -34,10 +26,10 @@ print(Back.BLACK+Fore.GREEN+r'''
      +-----------------------+  |      ,"        ,"    |
      |  .-----------------.  |  |     +---------+      |
      |  |                 |  |  |     | -==----'|      |
-     |  |  I LOVE DOS!    |  |  |     |         |      |
-     |  |  Bad command or |  |  |/----|`---=    |      |
-     |  |  C:\>_          |  |  |   ,/|==== ooo |      ;
-     |  |                 |  |  |  // |(((( [33]|    ,"
+     |  |     SUBZONE     |  |  |     |         |      |
+     |  |created by:w3w3w3|  |  |/----|`---=    |      |
+     |  |  C:> sub to my  |  |  |   ,/|==== ooo |      ;
+     |  |     channel     |  |  |  // |(((( [14]|    ,"
      |  `-----------------'  |," .;'| |((((     |  ,"
      +-----------------------+  ;;  | |         |,"
         /_)______________(_/  //'   | +---------+
@@ -71,13 +63,9 @@ _  _ ____ ____ ____
 
 print('%s %s  %s %s' % (a,b,d,e))
 
-
-print(Back.BLACK+Fore.YELLOW+('''
-
-43 6f 70 79 72 69 67 68 74 20 28 63 29 20 32 30 31 38 20 2d 20 4e 61 74 68 61 6e 20 43 6f 72 62 69 6e 2f 77 33 77 33 77 33\n'''))
-
-print(Fore.CYAN+Back.BLACK+'[\n  Copyright (c) 2018 - Nathan Corbin/w3w3w3 </>\n  ]\n')
 print('')
+
+time.sleep(1)
 
 
 
@@ -137,7 +125,7 @@ class Abuse_certificate_transparency:
 				print('{!} host status-code: %s\n ~ unable to access records using this abuse certificate transparency method' % (r.status_code))
 			else:
 				try:
-					json_data = json.loads('[%s]' % (r.text.replace('}{', '},{')))
+					json_data = json.loads(r.text)
 					for sub in (json_data):
 						subdomains.append(sub['name_value'])
 				except Exception as e:
@@ -296,20 +284,22 @@ class Dns_zone_transfer:
 
 
 
-
-
 if __name__=='__main__':
-	#main
+	# Check requirements are met, eg. modules are installed correctly etc.
 	requirements_check()
 
+	# Abuse certificate authority to get all and active subdomains of a domain
 	abuse = Abuse_certificate_transparency()
 	abuse.parse_url()
 	abuse.request_json()
 	abuse.active_subs()
 	abuse.write_file()
 
+	# Dns zone transfer to see if any information is leaking
 	zone = Dns_zone_transfer()
 	zone.nslookup()
 	zone.dns_records()
 
-#Copyright (c) 2018 - Nathan Corbin/w3w3w3
+# Copyright (c) 2018 - Nathan Corbin/w3w3w3
+# YouTube channel: youtube.com/w3w3w3
+# Tip me @ BitCoin:1EHmioBmujNAyVs5A6Uo1nfto9JZhGBDLd
