@@ -74,9 +74,9 @@ print('%s %s  %s %s' % (a,b,d,e))
 
 print(Back.BLACK+Fore.YELLOW+('''
 
-49 66 79 6F 75 61 72 65 72 65 61 64 69 6E 67 74 68 69 73 74 68 65 6E 68 69 73 74 61 72 74 68 69 73 72 65 70 6F 61 6E 64\n'''))
+43 6f 70 79 72 69 67 68 74 20 28 63 29 20 32 30 31 38 20 2d 20 4e 61 74 68 61 6e 20 43 6f 72 62 69 6e 2f 77 33 77 33 77 33\n'''))
 
-print(Fore.CYAN+Back.BLACK+'[\n  Copyright (c) 2018 - Nathan Corbin - @ncorbuk(Twitter) </>\n  ]\n')
+print(Fore.CYAN+Back.BLACK+'[\n  Copyright (c) 2018 - Nathan Corbin/w3w3w3 </>\n  ]\n')
 print('')
 
 
@@ -312,4 +312,4 @@ if __name__=='__main__':
 	zone.nslookup()
 	zone.dns_records()
 
-#Copyright (c) 2018 - Nathan Corbin - @ncorbuk(Twitter)
+#Copyright (c) 2018 - Nathan Corbin/w3w3w3
