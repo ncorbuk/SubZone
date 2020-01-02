@@ -44,8 +44,8 @@ For easy install of python package and all dependencies use - *pip install subzo
 **Key points**
 * Arguments are **-d** *(For domain)* & **-o** *(For output file)*
 * Use http(s) in your domain.  ~  *Ex. -d https://example.com (Not https://www.example.com)*
-* Specifying output file is *NOT* optional.  ~  *Ex. -o example.txt* 
 * Specifying domain name is *NOT* optional.  ~  *Ex. -d https://example.com*
+* Specifying output file *is* optional.  ~  *Ex. -o example.txt* 
 
 **Can also be used as an import to your own script/program** 
 *from subdomain import subzone*
