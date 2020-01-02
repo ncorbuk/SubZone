@@ -72,8 +72,8 @@ time.sleep(1)
 def args_parser():
 	#parse required argument/s needed for program
 	parser = argparse.ArgumentParser()
-	parser.add_argument('-d', '--domain', type=str, required=True, help='domain - to find subdomains(ex use. http(s)://facebook.com)')
-	parser.add_argument('-o', '--output', type=str, required=True, help='filename - file for output data(ex use. facebook.txt)')
+	parser.add_argument('-d', '--domain', type=str, required=True, help='domain - ssubdomains(ex use. http(s)://facebook.com)')
+	parser.add_argument('-o', '--output', type=str, required=True, help='filename - filename for output data(ex use. facebook.txt)')
 	args = parser.parse_args()
 	return args
 
@@ -299,6 +299,9 @@ if __name__=='__main__':
 	zone = Dns_zone_transfer()
 	zone.nslookup()
 	zone.dns_records()
+
+	print(':> SubZone Completed')
+	sys.exit(0)
 
 # Copyright (c) 2018 - Nathan Corbin/w3w3w3
 # YouTube channel: youtube.com/w3w3w3
