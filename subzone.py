@@ -73,7 +73,7 @@ def args_parser():
 	#parse required argument/s needed for program
 	parser = argparse.ArgumentParser()
 	parser.add_argument('-d', '--domain', type=str, required=True, help='domain - ssubdomains(ex use. http(s)://facebook.com)')
-	parser.add_argument('-o', '--output', type=str, required=True, help='filename - filename for output data(ex use. facebook.txt)')
+	parser.add_argument('-o', '--output', type=str, required=False, help='filename - filename for output data(ex use. facebook.txt)')
 	args = parser.parse_args()
 	return args
 
@@ -146,7 +146,7 @@ class Abuse_certificate_transparency:
 				sub = socket.gethostbyname_ex(sub)
 				active_subdomains.append(sub)
 			except:
-				pass
+				continue
 		number_all = len(abuse.request_json())
 		number_active = len(active_subdomains)
 
