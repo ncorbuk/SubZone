@@ -6,8 +6,10 @@
 
 **For python tutorials: https://bit.ly/2U58Lt9**
 
-## Become a Patreon - support the channel
-*Become a Patreon and support this channel, so that it can keep creating great content in the future* **LINK: https://www.patreon.com/w3w3w3**
+## If you want to leave a tip
+**If you would like to leave a tip you can do so below, thanks**
+* PayPal: https://paypal.me/w3w3w3
+* Bitcoin: 1EHmioBmujNAyVs5A6Uo1nfto9JZhGBDLd <-- pref this way :)
 
 # SubZone
 **```HTTP(S)-Subdomains,Dns records, & More!```**
