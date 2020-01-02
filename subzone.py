@@ -15,6 +15,7 @@ import time
 # YouTube channel: youtube.com/w3w3w3
 # Tip me @ BitCoin:1EHmioBmujNAyVs5A6Uo1nfto9JZhGBDLd
 
+# Colour only works when using CMD on Windows
 
 init(autoreset=True)
 
