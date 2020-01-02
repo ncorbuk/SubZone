@@ -192,9 +192,9 @@ class Abuse_certificate_transparency:
 		#write registerd subdomains and active subdomains to file
 		global active_subdomains
 		try:
-			reg = 'REGISTERED_'+self.output
-			active = 'ACTIVE_'+self.output
 			if self.output is not None:
+				reg = 'REGISTERED_'+self.output
+				active = 'ACTIVE_'+self.output
 				with open(reg,'w') as r:
 					for index, sub in enumerate(abuse.request_json()):
 						text = f'{index} {sub}\n'
