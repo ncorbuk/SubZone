@@ -4,7 +4,7 @@
 
 **pypi - https://pypi.org/project/subzone/**
 
-# Tutorial on SUBZONE: https://www.youtube.com/watch?v=5oNe7Rmtvoo&t=**
+## YouTube Tutorial on SUBZONE: https://www.youtube.com/watch?v=5oNe7Rmtvoo&t=
 **For python tutorials: https://bit.ly/2U58Lt9**
 
 ## If you want to leave a tip
