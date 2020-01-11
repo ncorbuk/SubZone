@@ -133,7 +133,7 @@ Please read [CONTRIBUTING.md] for details on our code of conduct, and the proces
 
 ## Authors
 
-* **Nathan Corbin** - *Github*: [ncorbuk](https://github.com/ncorbuk)
+* **w3w3w3** - *Github*: [ncorbuk](https://github.com/ncorbuk)
 
 ## Acknowledgments
 
