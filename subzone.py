@@ -87,6 +87,7 @@ def requirements_check():
 	with open(requirements, 'r') as rfp:
 		for line in rfp.readlines():
 			try:
+				line = line.strip()
 				exec("import " + line)
 			except:
 				print("[ERROR] Missing module:", line)
