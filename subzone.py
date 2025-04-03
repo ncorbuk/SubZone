@@ -11,9 +11,6 @@ import os
 import sys
 import time
 
-# Copyright (c) 2018 - /w3w3w3
-# YouTube channel: youtube.com/w3w3w3
-# Tip me @ BitCoin:1EHmioBmujNAyVs5A6Uo1nfto9JZhGBDLd
 
 # Colour only works when using CMD on Windows
 
@@ -311,6 +308,3 @@ if __name__=='__main__':
 	print(':> SubZone Completed')
 	sys.exit(0)
 
-# Copyright (c) 2018 - /w3w3w3
-# YouTube channel: youtube.com/w3w3w3
-# Tip me @ BitCoin:1EHmioBmujNAyVs5A6Uo1nfto9JZhGBDLd
